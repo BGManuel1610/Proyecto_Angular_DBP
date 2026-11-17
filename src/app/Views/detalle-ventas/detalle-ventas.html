@@ -1,0 +1,8 @@
+<h1>Detalle de ventas</h1>
+<label>
+  Venta ID:
+  <input [value]="ventaId" (input)="ventaId = $any($event.target).value" />
+</label>
+<button (click)="cargar()">Cargar</button>
+<app-table [data]="data"></app-table>
+
